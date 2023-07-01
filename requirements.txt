@@ -1,0 +1,16 @@
+flake8 = "*"
+
+[packages]
+django = '<3'
+djangorestframework = "*"
+django-rest-swagger = "*"
+django-allauth = "*"
+django-cors-headers = "*"
+django-rest-auth = "*"
+django-silk = "*"
+djangorestframework-simplejwt = "*"
+djangorestframework-jwt = "*"
+jsonfield = "*"
+django-ftpserver = "*"
+django-storages = "*"
+kombu = "*"

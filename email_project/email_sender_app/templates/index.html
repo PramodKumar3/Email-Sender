@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+
+
+</head>
+<body>
+    <div class="formpage" style="display:flex;justify-content:center;align-items:center;padding:0px;background-color:#FFBC42;font-family:cursive;"> 
+    <form method="post" action="{% url 'email' %}">
+        {% csrf_token %}
+        <h1 style="background-color:yellow;width:100%;text-align:center;border-radius:10px;">Email Sender</h1>
+
+    <h4>Username:</h4> <input class="form-control" style="margin:10px;font-size:1.4em;outline:none;padding:5px" type="text" placeholder="Username" name="name" required> <br>
+    <h4>Email:</h4> <input style="margin:10px;font-size:1.4em;outline:none; padding:5px;" type="email" placeholder="email" name="email" required>   <br>
+    <h4>Content:</h4> <textarea rows="10" cols="40" style="margin:10px;padding:5px;font-size:1.8em;" placeholder="Enter email content" name="content" required>  
+  </textarea><br>
+
+    <button style="margin:10px;border:none;padding:15px;background-color:#D81159;border-radius:15px;margin-left:200px;padding-left:30px;padding-right:30px;font-size:1.3em; " >Send</button>
+
+    </form>
+   
+</div>
+</body>
+</html>
